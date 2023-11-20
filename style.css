@@ -27,6 +27,11 @@
   align-items: center;
   position: relative;
   /* relative: para que la imagen de goku, que es absolute, se acomode a su padre y no al body */
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 25px 0px rgba(181, 111, 10, 1);
 }
 
 .card-imagen {
@@ -41,6 +46,11 @@
   position: absolute;
   top: -50px;
   left: 10px;
+  transition: all 0.5s ease;
+}
+
+.goku:hover {
+  filter: drop-shadow(0px 0px 10px rgba(236, 246, 99, 1));
 }
 
 .card-texto {
@@ -74,4 +84,13 @@
   padding: 10px 15px;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card-boton:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 246, 99, 1) 0%,
+    rgba(181, 111, 10, 1) 100%
+  );
 }
